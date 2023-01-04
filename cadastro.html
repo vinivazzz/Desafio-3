@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="CSS/cadastro.css">
+    <title>Cadastro</title>
+</head>
+<body>
+
+    <header>
+        <div class="container d-flex justify-content-lg-between">
+            <img src="logo/logo_seguros.jpg" alt="logo_top_seguros" >
+            <nav>
+                <ul class="list-inline ">
+                    <li class="list-inline-item">Inicial</li>
+                    <li class="list-inline-item"></li>
+                    <li class="list-inline-item">Sobre</li>
+                    <li class="list-inline-item"></li>
+                    <li class="list-inline-item">Planos</li>
+                    <li class="list-inline-item"></li>
+                    <li class="list-inline-item">Contato</li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <form novalidate class="needs-validation">
+        <div class="container">
+            <div class="row">
+                <div class="col-12"><h1>Faça seu cadastro logo abaixo!!</h1></div>
+            </div>
+
+            <div class="row">
+                <div class="col form-group">
+                    <label for="first">Nome completo</label>
+                    <input type="text" class="form-control" id="first" required>
+                </div> 
+            </div>
+
+            <div class="row">
+                <div class="col form-group">
+                    <label for="first">CPF</label>
+                    <input type="text" class="form-control" id="first" required>
+                </div> 
+            </div>
+
+            <div class="row">
+                <div class="col form-group">
+                    <label for="first">E-mail</label>
+                    <input type="text" class="form-control" id="first" required>
+                </div> 
+            </div>
+
+            <div class="row">
+                <div class="col form-group">
+                    <label for="first">Telefone</label>
+                    <input type="tel" class="form-control" id="first" required>
+                </div> 
+            </div>
+
+
+            <div class="row">
+                <div class="col-sm-9">
+                    <label for="adress">Endereço</label>
+                    <input type="text" class="form-control" id="adress" required>
+            </div>
+                <div class="col-sm-3">
+                    <label for="number">Numero</label>
+                    <input type="text" class="form-control" id="number" required>
+                </div>
+            </div>
+            
+
+            <div class="row">
+                <div class="col-sm-4 form-group">
+                    <label for="complement"> Rua</label>
+                    <input type="text" class="form-control" id="complement" required>
+                </div>
+                <div class="col-sm-4 form-group">
+                    <label for="complement"> complemento</label>
+                    <input type="text" class="form-control" id="complement" required>
+                </div>
+                <div class="col-sm-4 form-group">
+                    <label for="district"> Bairro</label>
+                    <input type="text" class="form-control" id="district" required>
+                </div>
+            </div>
+    
+            <div class="row">
+                <div class="col-sm-4 form-group">
+                    <label for="city">Cidade</label>
+                    <input type="text" class="form-control" id="city" required>
+                </div>
+                <div class="col-6 col-sm-4 form-group">
+                    <label for="satte">Estado</label>
+                    <input type="text" class="form-control" id="satte" required>
+                </div>
+                <div class="col-6 col-sm-4 form-group">
+                    <label for="country">País</label>
+                    <input type="text" class="form-control" id="country" required>
+                </div>
+            </div>
+    
+            <hr> 
+            
+            <div class="row">
+                <button type="submit" class="btn btn-primary btn-block">Salvar</button>
+            </div>
+    
+    
+        </div>
+    </form>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
+
+    <script>
+
+        window.addEventListener('load', e =>{
+
+        const form = document.querySelector('form');
+
+        form.addEventListener('submit', es => {
+
+            if (form.checkValidity() === false) {
+
+                es.preventDefault();
+                es.stopPropagation();
+
+            }
+
+            form.classList.add('was-validated')
+
+        });
+
+    });
+
+</script>
+
+</body>
+</html>
