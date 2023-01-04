@@ -1,0 +1,27 @@
+*{margin:0;padding:0;}
+
+header {
+    border-bottom: black solid 0,5mm;
+    background-color:#002364;
+    border: black solid 0,5mm;
+}
+
+
+img {
+    padding: 0.5cm;
+    width: 2cm;
+    height: 50;
+}
+
+header ul {
+    display: flex;
+    color: #ffffff;
+    margin-top: 0.5cm;
+    align-items: center ;
+}
+
+form {
+    margin-top: 2cm;
+    
+}
+
